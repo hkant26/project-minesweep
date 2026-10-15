@@ -90,8 +90,8 @@ description: 项目排雷(project-minesweep)——通用排雷入口:用户想�
 
 - [ ] **Step 2: 逐字校验 frontmatter**
 
-Run: `sed -n '3p' ~/develop/claude-review-skills/project-minesweep/SKILL.md | grep -c ':'`
-Expected: `0`(description 行内不得出现 ASCII 冒号,YAML 裸标量坑;全角 : 不受影响)
+Run: `sed -n '3p' ~/develop/claude-review-skills/project-minesweep/SKILL.md | sed 's/^description: //' | grep -c ':' || true`
+Expected: `0`(description **值**内不得出现 ASCII 冒号;键前缀 `description: ` 的冒号必在,先剥前缀再数;全角 : 不受影响。实施后记:实测值内残留 1 处 ASCII 冒号「通用排雷入口:用户」,冒号后紧跟汉字非空格,YAML 裸标量合法,red-team 引擎 3 处同形既有在载,保留;Task 4 新会话冒烟为最终裁判)
 Run: `grep -c '^description: ' ~/develop/claude-review-skills/project-minesweep/SKILL.md`
 Expected: `1`
 
