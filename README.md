@@ -72,3 +72,7 @@ cp -R project-minesweep hypothesis-challenge red-team pre-mortem <项目>/.claud
 ├── pre-mortem/SKILL.md               # 事前验尸:倒推致死路径、前置动作与救活预案
 └── docs/superpowers/                 # 设计 spec 与实施计划(与安装使用无关)
 ```
+
+## License
+
+MIT — 见 [LICENSE](LICENSE)。
