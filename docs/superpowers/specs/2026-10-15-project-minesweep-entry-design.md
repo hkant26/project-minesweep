@@ -93,3 +93,7 @@ skill-creator eval 本机有坑(延迟工具/并发 uid/recall=0 假象,记忆�
 3. 本地安装入口 + 记忆更新
 4. 触发冒烟(新会话)
 5. repo rename + commit + push
+
+## 修订记录
+
+- 2026-10-15(冒烟 7/7 全过后):用户指令解除 pre-mortem 冻结——新增「救活预案」(流程第 3 步第 5 点;仅 Top 3;触发征兆→窗口内动作×资源×时限;不可逆路径明写「无可救活窗口」,不编造救活术)。description 与触发词零改动;README pre-mortem 行同步;hypothesis-challenge / red-team 仍冻结。
