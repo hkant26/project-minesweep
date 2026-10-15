@@ -1,7 +1,7 @@
 # 项目排雷通用入口(project-minesweep)设计
 
 - 日期:2026-10-15
-- 状态:已与用户对齐,待实施
+- 状态:已实施(2026-10-15 全量落地;pre-mortem 后经文末修订记录解冻增强)
 - 范围:`claude-review-skills` repo 重定位为「项目排雷」——新增通用入口技能,三引擎零改动,repo 改名,README 重写,本地同装
 
 ## 背景与目标
@@ -53,7 +53,7 @@ repo 现为三个场景化评审技能(hypothesis-challenge / red-team / pre-mor
 
 **输出边界**:对话内路由说明仅一两句;不写文件;不总结引擎产出。
 
-### 2. 三引擎:零改动
+### 2. 三引擎:零改动(后记:pre-mortem 已按文末修订记录解冻)
 
 触发调优是既有资产,入口纯增量;本地与 repo 的引擎文件保持逐字相同,同步面只剩入口一个文件。
 
@@ -78,12 +78,12 @@ repo 现为三个场景化评审技能(hypothesis-challenge / red-team / pre-mor
 3. 「帮我给这个跑了半年的系统排排雷」→ 射程外话术
 4. 阶段模糊材料(如一段半页提纲 + 一句「要去找投资人」)→ 入口问齐三选一而非瞎猜
 
-skill-creator eval 本机有坑(延迟工具/并发 uid/recall=0 假象,记忆在案),不在本次验收内承诺。
+skill-creator eval 本机有坑(延迟工具/并发 uid/recall=0 假象,备忘),不在本次验收内承诺。
 
 ## 明确不做(YAGNI)
 
 - 第四引擎/通用雷区扫描(进行中项目)
-- 三引擎 SKILL.md 的任何改动(含 description)
+- 三引擎 SKILL.md 的任何改动(含 description)(pre-mortem 后解冻,见文末修订记录)
 - LICENSE(用户未决定)、plugin marketplace.json、skill-creator eval
 
 ## 实施清单
