@@ -232,7 +232,7 @@ metadata:
 2026-10-15 repo 由 claude-review-skills 改名并重定位为**项目排雷**:通用入口 project-minesweep(判阶段+路由,2026-10-15 新增)+ 三引擎(hypothesis-challenge/red-team/pre-mortem,内容零改动)。
 
 - 真源 = `~/.claude/skills/` 四件套;repo 工作副本 `~/develop/project-minesweep/`(Task 5 起)。改任何一件 → 手动 cp 到 repo 副本再 commit/push,两处不自动同步。
-- 入口是纯路由器(射程外=进行中项目明说不在射程,无第四引擎);spec 在 repo `docs/superpowers/specs/2026-10-15-project-minesweep-entry-design.md`。
+- 入口是纯路由器(射程外=进行中项目/零文本两种诚实边界话术,无第四引擎);触发词重叠(挑毛病)与英文锚点两条 Minor 留冒烟后收敛;spec 在 repo `docs/superpowers/specs/2026-10-15-project-minesweep-entry-design.md`。
 - repo 无 LICENSE(用户未决定)。
 - 相关:[[review-skill-series-status]]
 ```
